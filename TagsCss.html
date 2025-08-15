@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tags.css">
+    <title>CSS Tags</title>
+</head>
+
+<body>
+    <header class="topo-header">
+        <div class="topo">
+            <div class="logo">
+                <img src="imagens/logo1.png" alt="Logo Hartmann">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">INÍCIO</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="grupo-cards firts">
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>background-color</h3>
+                    <p>
+                        Serve para mudar a cor de fundo dos elementos.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <strong>background-color</strong> Cor de fundo<br>
+                    <code><strong>background-color: #FFF</strong></code> 
+                    <code>body {<br>
+                        <strong>background-color:</strong> #fff;<br>
+                    }</code>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>Alinhar ao centro</h3>
+                    <p>
+                        Esse é um possível jeito para alinhar os elementos no centro.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <strong>align-items</strong> Alinhar o conteúdo<br>
+                    <code><strong>align-items: center;</strong></code> 
+                    <code>.cards {<br>
+                        margin: auto;<br>
+                        <strong>align-items: center;</strong><br>
+                    }</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>margem</h3>
+                    <p>
+                        definições para aplicar a margem nos elementos.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <strong>Margin</strong> Margem dos elementos<br>
+
+                    <code>.cards {<br>
+                        <strong>margin: auto;</strong><br>
+                        <strong>margin-top:</strong> (margem topo);<br>
+                        <strong>margin-bottom:</strong> (margem abaixo);<br>
+                        <strong>margin-left:</strong> (margem esquerda);<br>
+                        <strong>margin-right:</strong> (margem direita);
+                        <br>
+                    }</code>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>Ajuste de tamanho</h3>
+                    <p>
+                        Para ajustar os elemento é usado as tags width e heigth para que consiga aumentar e diminuir o tamanho tanto do fundo quanto de uma imagem.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <strong>heigth e width</strong> Ajuste de tamanho de elementos<br>
+                    <code>.cards{<br>
+                        <strong>heigth:</strong>90px/50%; (altura do elemento)<br>
+                        <strong>width:</strong>90px/50% (Largura do elemento);<br>
+                        <p>também exite um codigo que ele se ajusta de acordo a quantidade de elementos dentro:</p>
+                        <strong>width: fit-content;</strong><br>
+                        <strong>heigth: fit-content;</strong><br>
+                    }</code>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="grupo-cards">
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>Sombreamento de uma caixa</h3>
+                    <p>
+                        Essa propriedade do Css serve para que algum elemento que ficaria melhor com um Sombreamento ou uma animação que ficaria melho quando passase o cursor por cima.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <strong>Box-shadow</strong> Sombra em uma caixa/elemento<br>
+                    <code>.cards {<br>
+                         <strong>box-shadow:</strong> 0 2px 5px rgba(0, 0, 0, 0.05); <br>
+                    }</code>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>Barra de rolagem</h3>
+                    <p>
+                        Para editar a forma como funciona a barra de rolagem das paginas.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <code>.cards {<br>
+                         <strong>overflow-x:</strong> <br>
+                         <strong>overflow-y:</strong> <br>
+                    }</code>
+                </div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>Script</h3>
+                    <p>
+                        Essa tag é utilizada quando é necessário vincular o arquivo HTML ao JavaScript para que haja
+                        interações dentro da página.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <strong>script</strong> Vincular JS ao HTML<br>
+                    <strong><code>&lt;script&gt;</code></strong>
+                    <p>Após inserir a tag, é necessário vincular o arquivo colocando <strong>src="[nome-do-arquivo.js]"</strong> dentro da tag de abertura.</p>
+                    <strong><code>&lt;/script&gt;</code></strong>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>Strong</h3>
+                    <p>
+                        Essa tag deixa em negrito as palavras que ficam entre a abertura e o fechamento da tag, sendo
+                        mais utilizada quando se quer destacar palavras específicas dentro de um texto.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <strong>strong</strong> Deixa uma palavra em negrito.<br>
+                    <strong><code>&lt;strong&gt;</code></strong>
+                    <p>E aqui você coloca a palavra ou o texto escolhido para o destaque.</p>
+                    <strong><code>&lt;/strong&gt;</code></strong>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="grupo-cards">
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>Input</h3>
+                    <p>
+                        Serve para criar campos de entrada de dados em formulários web, permitindo que os usuários interajam
+                        com a página e enviem informações.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <strong>input</strong> Caixa para inserir dados.<br />
+                    <strong><code>&lt;input&gt;</code></strong><br>
+                    <p>A partir disso, aparecerá uma caixa. Para fazer com que apareça um texto no fundo dessa
+                        caixa, basta usar o atributo <strong>placeholder</strong>.</p>
+                    <input placeholder="exemplo">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>Button</h3>
+                    <p>
+                        É usada para criar um botão clicável em uma página da web.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <strong>button</strong> Cria um botão para interagir no site.<br>
+                    <strong><code>&lt;button&gt;</code></strong>
+                    <p>Após a inserção da tag button, pode ser colocado texto ou até outras tags dentro, como p ou a.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>a</h3>
+                    <p>
+                        É usada para criar hiperlinks, ou seja, links que permitem aos usuários navegar entre diferentes
+                        páginas da web, seções dentro da mesma página ou até mesmo para arquivos e endereços de e-mail.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <strong>a</strong> Cria um link para navegação.<br>
+                    <strong><code>&lt;a href="[aqui é inserido o link]"&gt;</code></strong>
+                    <strong><code>&lt;/a&gt;</code></strong>
+                </div>
+                <a href=""></a>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        &copy; Site desenvolvido por João Hartmann, com fins educativos.
+        Todos os direitos reservados.
+    </footer>
+
+    <script src="animacao.js"></script>
+
+</body>
+
+</html>

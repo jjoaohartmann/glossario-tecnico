@@ -1,0 +1,203 @@
+/* === RESET E BASE === */
+body {
+    margin: 0;
+    background-color: black;
+    background-image: url(imagens/fundo.png);
+    background-size: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar,
+.code-card::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track,
+.code-card::-webkit-scrollbar-track {
+    background: #004d4d;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb,
+.code-card::-webkit-scrollbar-thumb {
+    background: #20B2AA;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover,
+.code-card::-webkit-scrollbar-thumb:hover {
+    background: #36c5c5;
+}
+
+/* === HEADER FIXO COM BLUR AO SCROLL === */
+header.topo-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 0;
+    background-color: #008080;
+    border: solid 2px #20B2AA;
+    background-image: url(imagens/Sem\ nome\ \(1034\ x\ 108\ px\).png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+    z-index: 999;
+}
+
+/* Classe para o efeito blur */
+header.topo-header.blur {
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 128, 128, 0.8);
+}
+
+/* Espaço extra no topo para evitar conteúdo "escondido" atrás do header fixo */
+body>*:not(header.topo-header):first-child {
+    margin-top: 120px;
+    /* ajuste conforme altura do seu header */
+}
+
+.topo {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+/* === MENU === */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline;
+    border-left: solid 1px #333;
+    padding: 0 10px;
+}
+
+.menu ul li:first-child {
+    border-left: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    color: #20B2AA;
+    text-decoration: underline;
+}
+
+/* === LOADING (EXCLUSIVO JS) === */
+.loading {
+    margin: 2% 0 2% 4%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.grupo-cards {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    justify-content: center;
+}
+.firts{
+    margin-top: 130px;
+}
+.card {
+    background-color: #008080;
+    width: 300px;
+    max-height: 550px;
+    /* height: fit-content; */
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 2%;
+}
+
+.tag {
+    color: aliceblue;
+}
+
+.card h3{
+    color: #0cb3be;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 70%;
+     align-items: center;
+    margin: auto;
+    margin-top: 2%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card h3, p {
+    text-align: center;
+}
+
+/* BOX DENTRO CARDS */
+.item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 6px solid #0cb3be;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    width: 253px;
+    height: fit-content;
+    align-items: center;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    
+}
+
+.item:hover {
+    transform: scale(1.02);
+}
+
+.item strong {
+    font-size: 1.1rem;
+    color: #0cb3be;
+}
+
+.item code {
+    display: block;
+    background-color: #f0f0f0;
+    padding: 12px;
+    margin-top: 10px;
+    font-family: monospace;
+    font-size: 0.95rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-align: left;
+}
+
+/* === FOOTER === */
+footer {
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #1c7691;
+}
