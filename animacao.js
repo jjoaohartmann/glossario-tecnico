@@ -6,7 +6,8 @@ accordionHeaders.forEach(header => {
         accordionContent.classList.toggle('active');
     });
 });
-// Cabeçalho tags
+
+// Cabeçalho Tags
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header.topo-header');
     if (window.scrollY > 10) {
@@ -16,7 +17,7 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// cabeçalho inicio
+// Cabeçalho Início
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.header-principal');
     if (window.scrollY > 10) {

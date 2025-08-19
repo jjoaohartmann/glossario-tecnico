@@ -90,7 +90,7 @@ body>*:not(header.topo-header):first-child {
 
 .menu ul li a {
     text-decoration: none;
-    color: #333;
+    color: #0cb3be;
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
@@ -101,14 +101,6 @@ body>*:not(header.topo-header):first-child {
     text-decoration: underline;
 }
 
-/* === LOADING (EXCLUSIVO JS) === */
-.loading {
-    margin: 2% 0 2% 4%;
-    width: 90%;
-    display: flex;
-    align-items: center;
-}
-
 .grupo-cards {
     display: flex;
     margin-top: 30px;
@@ -117,14 +109,14 @@ body>*:not(header.topo-header):first-child {
     margin-right: 2%;
     justify-content: center;
 }
-.firts{
+
+.first {
     margin-top: 130px;
 }
+
 .card {
     background-color: #008080;
     width: 300px;
-    max-height: 550px;
-    /* height: fit-content; */
     border-radius: 5px;
     padding: 10px;
     margin-right: 2%;
@@ -134,20 +126,21 @@ body>*:not(header.topo-header):first-child {
     color: aliceblue;
 }
 
-.card h3{
+.card h3 {
     color: #0cb3be;
     font-size: 22px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: aliceblue;
     border-radius: 5px;
     width: 70%;
-     align-items: center;
+    align-items: center;
     margin: auto;
     margin-top: 2%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.card h3, p {
+.card h3,
+p {
     text-align: center;
 }
 
@@ -166,7 +159,7 @@ body>*:not(header.topo-header):first-child {
     margin: auto;
     margin-top: 5%;
     margin-bottom: 10px;
-    
+
 }
 
 .item:hover {
@@ -200,4 +193,23 @@ footer {
     position: fixed;
     width: 100%;
     background-color: #1c7691;
+}
+
+.exemplificacao {
+    margin-top: 8%;
+    margin-left: 40%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #004d4d;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.animacao:hover {
+    background-color: aliceblue;
+    color: red;
+}
+
+.title-page{
+    color: #0cb3be;
 }

@@ -14,6 +14,9 @@
             <div class="logo">
                 <img src="imagens/logo1.png" alt="Logo Hartmann">
             </div>
+            <div class="title-page">
+                <h2>Propriedades Css</h2>
+            </div>
             <div class="menu">
                 <ul>
                     <li><a href="index.html">INÍCIO</a></li>
@@ -22,7 +25,7 @@
         </div>
     </header>
 
-    <section class="grupo-cards firts">
+    <section class="grupo-cards first">
         <div class="card">
             <div class="container">
                 <div class="tag">
@@ -34,7 +37,7 @@
 
                 <div class="item">
                     <strong>background-color</strong> Cor de fundo<br>
-                    <code><strong>background-color: #FFF</strong></code> 
+                    <code><strong>background-color: #FFF</strong></code>
                     <code>body {<br>
                         <strong>background-color:</strong> #fff;<br>
                     }</code>
@@ -54,7 +57,7 @@
 
                 <div class="item">
                     <strong>align-items</strong> Alinhar o conteúdo<br>
-                    <code><strong>align-items: center;</strong></code> 
+                    <code><strong>align-items: center;</strong></code>
                     <code>.cards {<br>
                         margin: auto;<br>
                         <strong>align-items: center;</strong><br>
@@ -68,7 +71,7 @@
                 <div class="tag">
                     <h3>margem</h3>
                     <p>
-                        definições para aplicar a margem nos elementos.
+                        Definições para aplicar a margem nos elementos.
                     </p>
                 </div>
 
@@ -93,18 +96,19 @@
                 <div class="tag">
                     <h3>Ajuste de tamanho</h3>
                     <p>
-                        Para ajustar os elemento é usado as tags width e heigth para que consiga aumentar e diminuir o tamanho tanto do fundo quanto de uma imagem.
+                        Para ajustar os elementos é usado as tags width e height para que consiga aumentar e diminuir o
+                        tamanho tanto do fundo quanto de uma imagem.
                     </p>
                 </div>
 
                 <div class="item">
-                    <strong>heigth e width</strong> Ajuste de tamanho de elementos<br>
+                    <strong>height e width</strong> Ajuste de tamanho de elementos<br>
                     <code>.cards{<br>
-                        <strong>heigth:</strong>90px/50%; (altura do elemento)<br>
-                        <strong>width:</strong>90px/50% (Largura do elemento);<br>
-                        <p>também exite um codigo que ele se ajusta de acordo a quantidade de elementos dentro:</p>
+                        <strong>height:</strong>90px/50%; (altura do elemento)<br>
+                        <strong>width:</strong>90px/50% (largura do elemento);<br>
+                        <p>Também existe um código que se ajusta de acordo com a quantidade de elementos dentro:</p>
                         <strong>width: fit-content;</strong><br>
-                        <strong>heigth: fit-content;</strong><br>
+                        <strong>height: fit-content;</strong><br>
                     }</code>
                 </div>
             </div>
@@ -118,7 +122,8 @@
                 <div class="tag">
                     <h3>Sombreamento de uma caixa</h3>
                     <p>
-                        Essa propriedade do Css serve para que algum elemento que ficaria melhor com um Sombreamento ou uma animação que ficaria melho quando passase o cursor por cima.
+                        Essa propriedade do CSS serve para que algum elemento que ficaria melhor com um sombreamento ou
+                        uma animação que ficaria melhor quando passasse o cursor por cima.
                     </p>
                 </div>
 
@@ -137,54 +142,69 @@
                 <div class="tag">
                     <h3>Barra de rolagem</h3>
                     <p>
-                        Para editar a forma como funciona a barra de rolagem das paginas.
+                        Para editar a forma como funciona a barra de rolagem das páginas.
                     </p>
                 </div>
 
                 <div class="item">
+                    <strong>Overflow</strong> Define estilos de barra de rolagem<br>
                     <code>.cards {<br>
-                         <strong>overflow-x:</strong> <br>
-                         <strong>overflow-y:</strong> <br>
+                         <strong>overflow-x</strong>(serve para a barra de rolagem Horizontal); <br>
+                         <strong>overflow-y</strong>(serve para a barra de rolagem Vertical); <br>
                     }</code>
+                    <p>E após a seleção de qual barra gostaria de por algum atributo é só colocar dois pontos e escolher um:
+                    </p>
+                    <code>
+                        <strong>Hidden;</strong> (esconde a barra)
+                        <strong>Scroll;</strong> (Aparece quando o conteúdo excede o espaço)
+                        <strong>auto; </strong>(Adiciona automaticamente a barra)
+                        <strong>visible:</strong> (dimensões de um elemento exibidas normalmente, sem ser cortado ou ter barras de rolagem adicionadas)
+                    </code>
                 </div>
 
             </div>
         </div>
+
         <div class="card">
             <div class="container">
                 <div class="tag">
-                    <h3>Script</h3>
+                    <h3>Espaçamento Interno do elemento</h3>
                     <p>
-                        Essa tag é utilizada quando é necessário vincular o arquivo HTML ao JavaScript para que haja
-                        interações dentro da página.
+                        Como a propriedade "Margin" que define um espaçamento externo dos elementos, também existe o
+                        padding que define um espaçamento interno dos elementos.
                     </p>
                 </div>
 
                 <div class="item">
-                    <strong>script</strong> Vincular JS ao HTML<br>
-                    <strong><code>&lt;script&gt;</code></strong>
-                    <p>Após inserir a tag, é necessário vincular o arquivo colocando <strong>src="[nome-do-arquivo.js]"</strong> dentro da tag de abertura.</p>
-                    <strong><code>&lt;/script&gt;</code></strong>
-
+                    <strong>padding</strong> Espaçamento interno<br>
+                    <code>.cards {<br>
+                         <strong>padding:</strong>10px; <br>
+                    }</code>
+                    <p>Como exemplo esse botão que tem um padding de 10px</p>
+                    <button class="exemplificacao">hello</button>
                 </div>
 
             </div>
         </div>
+
         <div class="card">
             <div class="container">
                 <div class="tag">
-                    <h3>Strong</h3>
+                    <h3>Display</h3>
                     <p>
-                        Essa tag deixa em negrito as palavras que ficam entre a abertura e o fechamento da tag, sendo
-                        mais utilizada quando se quer destacar palavras específicas dentro de um texto.
+                        Ela controla o tipo de caixa que o elemento usa e como ele interage com outros elementos ao seu
+                        redor.
                     </p>
                 </div>
 
                 <div class="item">
-                    <strong>strong</strong> Deixa uma palavra em negrito.<br>
-                    <strong><code>&lt;strong&gt;</code></strong>
-                    <p>E aqui você coloca a palavra ou o texto escolhido para o destaque.</p>
-                    <strong><code>&lt;/strong&gt;</code></strong>
+                    <strong>Display</strong> controla o tipo de caixa e interação<br>
+                    <code>.cards {<br>
+                         <strong>display: block;</strong> Não permite que outros elementos fiquem na mesma linha ao seu lado.<br>
+                         <strong>display: inline;</strong> Faz com que um elemento seja exibido na mesma linha que outros elementos, sem quebrar a linha antes ou depois dele.<br>
+                         <strong>display: flex;</strong> Serve para tornar um display mais flexível e fácil de ajustar.<br>
+                         <strong>display: grid;</strong> Para criar um layout em grade, permitindo organizar elementos filhos em linhas e colunas de forma bidimensional.<br>
+                    }</code>
                 </div>
 
             </div>
@@ -196,19 +216,20 @@
         <div class="card">
             <div class="container">
                 <div class="tag">
-                    <h3>Input</h3>
+                    <h3>hover</h3>
                     <p>
-                        Serve para criar campos de entrada de dados em formulários web, permitindo que os usuários interajam
-                        com a página e enviem informações.
+                        É uma pseudo-classe CSS que reage à interação do usuário com o mouse. É usado para aplicar
+                        estilos específicos a um elemento quando o cursor do mouse está sobre ele.
                     </p>
                 </div>
 
                 <div class="item">
-                    <strong>input</strong> Caixa para inserir dados.<br />
-                    <strong><code>&lt;input&gt;</code></strong><br>
-                    <p>A partir disso, aparecerá uma caixa. Para fazer com que apareça um texto no fundo dessa
-                        caixa, basta usar o atributo <strong>placeholder</strong>.</p>
-                    <input placeholder="exemplo">
+                    <strong>hover</strong> Animação feita em um elemento quando passa o cursor<br />
+                    <code>.animacao<strong>:hover</strong> {<br>
+                        background-color: aliceblue;<br>
+                         color: red;<br>
+                    }</code>
+                    <button class="exemplificacao animacao">Hello</button>
                 </div>
             </div>
         </div>
@@ -216,39 +237,23 @@
         <div class="card">
             <div class="container">
                 <div class="tag">
-                    <h3>Button</h3>
+                    <h3>Text-transform</h3>
                     <p>
-                        É usada para criar um botão clicável em uma página da web.
+                        A propriedade "text-transform" pode definir como um texto deve ser capitalizado.
+                    Alguns exemplos são o "uppercase", que deixa todas as letras maiúsculas; "lowercase", que deixa
+                    todas as letras minúsculas e o "none" que mantém o texto como está.
                     </p>
                 </div>
 
                 <div class="item">
-                    <strong>button</strong> Cria um botão para interagir no site.<br>
-                    <strong><code>&lt;button&gt;</code></strong>
-                    <p>Após a inserção da tag button, pode ser colocado texto ou até outras tags dentro, como p ou a.</p>
+                    <strong>text-transform</strong> – Utilizada para definir como o texto deve ser exibido (letras
+                    maiúsculas apenas, definir a letra inicial)<br>
+                    <code>text-transform: uppercase</code>
                 </div>
 
             </div>
+
         </div>
-
-        <div class="card">
-            <div class="container">
-                <div class="tag">
-                    <h3>a</h3>
-                    <p>
-                        É usada para criar hiperlinks, ou seja, links que permitem aos usuários navegar entre diferentes
-                        páginas da web, seções dentro da mesma página ou até mesmo para arquivos e endereços de e-mail.
-                    </p>
-                </div>
-
-                <div class="item">
-                    <strong>a</strong> Cria um link para navegação.<br>
-                    <strong><code>&lt;a href="[aqui é inserido o link]"&gt;</code></strong>
-                    <strong><code>&lt;/a&gt;</code></strong>
-                </div>
-                <a href=""></a>
-
-            </div>
         </div>
 
     </section>

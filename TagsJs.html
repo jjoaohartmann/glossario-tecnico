@@ -14,16 +14,87 @@
             <div class="logo">
                 <img src="imagens/logo1.png" alt="Logo Hartmann">
             </div>
+            <div class="title-page">
+                <h2>Tags JavaScript</h2>
+            </div>
             <div class="menu">
                 <ul>
-                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="index.html">INÍCIO</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <div class="carregando">
-        <img class="loading" src="imagens/loading.png" alt="">
-    </div>
+
+    <section class="grupo-cards first">
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>If Else</h3>
+                    <p>
+                        É uma estrutura de decisão que, traduzida para o português, seria: Se e Senão. Ou seja, se
+                        determinada condição for verdadeira, ocorre uma ação; caso contrário, outra ação será executada
+                    </p>
+                </div>
+
+                <div class="item">
+                    <strong>If Else</strong> Estrutura de Decisão<br>
+                    <code>let nota = 85;<br>
+                        <strong>if</strong>(nota >= 90){<br>
+                            console.log("Nota A!");<br>
+                        }<strong>else</strong>{<br>
+                        console.log("Nota C");<br>
+                    }</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>Declaração Variável com Let</h3>
+                    <p>
+                        É usando quando você precisa de uma variável cujo valor pode mudar durante a execução do
+                        programa. É ideal para contadores, variáveis de controle em laços ou quando o dado precisa ser
+                        atualizado. </p>
+                </div>
+
+                <div class="item">
+                    <strong>Let</strong> Declaração de Variável alternavel<br>
+                    <code>
+                        <strong>let</strong> <b>idade = 20;</b><br>
+                        console.log(idade); <br> // saída é o 20// <br>
+                        <p></p>
+                        // alterando o valor da variável // <br>
+                        <b>idade = 21;</b><br>
+                        console.log(idade); <br>// saída é 21 //
+                </code>
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="container">
+                <div class="tag">
+                    <h3>Declaração Variável com Const</h3>
+                    <p>
+                        É usado quando o valor não deve ser reatribuído. Ele é indicado para valores fixos, constantes matemáticas, configurações ou variáveis que nunca vão mudar ao longo do código. </p>
+                </div>
+
+                <div class="item">
+                    <strong>Const</strong> Declaração de Variável fixa<br>
+                    <code>
+                        <strong>Const</strong> <b>cpf = 123.456.789-00;</b> <br>//CPF é fixo//<br>
+                        <p></p>
+                        console.log("CPF", cpf); <br>
+                        <p></p>
+                        //cpf = "000.111.222-33"// <br> ❌ Isso daria erro, pois const não pode ser reatribuído <br>
+                </code>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
     <footer>
         &copy; Site desenvolvido por João Hartmann, com fins educativos.
         Todos os direitos reservados.

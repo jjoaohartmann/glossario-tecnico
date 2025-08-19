@@ -46,7 +46,7 @@ body::-webkit-scrollbar-thumb:hover,
     height: fit-content;
     padding: 0;
     background-color: #008080; /* cor-principal */
-    border: solid 2px #20B2AA; /* cor-secundaria */
+    border: solid 2px #20B2AA; /* cor-secundária */
     background-image: url(imagens/Sem\ nome\ \(1034\ x\ 108\ px\).png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -81,20 +81,19 @@ body::-webkit-scrollbar-thumb:hover,
 
 .menu ul li a {
     text-decoration: none;
-    color: #333; /* cor-texto-escuro */
+    color: #0cb3be; /* cor-texto-escuro */
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s ease;
-
 }
 
 .menu ul li a:hover {
-    color: #20B2AA; /* cor-secundaria */
+    color: #20B2AA; /* cor-secundária */
     text-decoration: underline;
 }
 
-/* titulo */
+/* título */
 .header-titulo {
     margin: auto;
     width: 60%;
@@ -198,4 +197,3 @@ footer {
     text-align: center;
     margin-bottom: 6%;
 }
-
